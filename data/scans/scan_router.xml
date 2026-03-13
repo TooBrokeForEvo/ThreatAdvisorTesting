@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///opt/homebrew/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Thu Jan 29 11:23:54 2026 as: nmap -p- -sV -O -oA scan_router 192.168.0.1 -->
+<nmaprun scanner="nmap" args="nmap -p- -sV -O -oA scan_router 192.168.0.1" start="1769685834" startstr="Thu Jan 29 11:23:54 2026" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<address addr="AC:DE:48:00:00:02 " addrtype="mac" vendor="Netgear"/>
+<hostnames>
+</hostnames>
+</hosthint>

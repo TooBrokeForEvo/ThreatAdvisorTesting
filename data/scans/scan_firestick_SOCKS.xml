@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///opt/homebrew/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Thu Jan 29 10:25:49 2026 as: nmap -p- -sV -oA scan_firestick_SOCKS 192.168.0.13 -->
+<nmaprun scanner="nmap" args="nmap -p- -sV -oA scan_firestick_SOCKS 192.168.0.13" start="1769682349" startstr="Thu Jan 29 10:25:49 2026" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.13" addrtype="ipv4"/>
+<address addr="B4:B7:42:63:84:A2" addrtype="mac" vendor="Amazon Technologies"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1769682349" endtime="1769682499"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.13" addrtype="ipv4"/>
+<address addr="B4:B7:42:63:84:A2" addrtype="mac" vendor="Amazon Technologies"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="49140">
+<extrareasons reason="no-response" count="49140" proto="tcp" ports="1-1079,1081-4069,4072-6542,6544-7804,7806-8887,8889-10000,10002-16383,32768-40316,40318-55441,55444,55446-65535"/>
+</extraports>
+<extraports state="closed" count="16389">
+<extrareasons reason="reset" count="16389" proto="tcp" ports="4071,6543,7805,10001,16384-32767,40317"/>
+</extraports>
+<port protocol="tcp" portid="1080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="socks5" extrainfo="No authentication; connection failed" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="4070"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nagios-nsca" product="Nagios NSCA" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="8888"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="55442"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nagios-nsca" product="Nagios NSCA" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="55443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="unknown" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="55445"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="7261" rttvar="1913" to="100000"/>
+</host>
+<runstats><finished time="1769682499" timestr="Thu Jan 29 10:28:19 2026" summary="Nmap done at Thu Jan 29 10:28:19 2026; 1 IP address (1 host up) scanned in 150.47 seconds" elapsed="150.47" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

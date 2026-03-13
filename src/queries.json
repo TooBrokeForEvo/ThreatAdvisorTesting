@@ -1,0 +1,100 @@
+{
+    "macos": {
+      "scans": [
+        {
+          "name": "running_processes",
+          "sql": "SELECT pid, name, path, cmdline, uid, start_time FROM processes LIMIT 10;",
+          "description": "List all currently running processes."
+        },
+        {
+          "name": "open_network_connections",
+          "sql": "SELECT pid, local_address, local_port, remote_address, remote_port, state, protocol FROM process_open_sockets WHERE remote_address != '' LIMIT 10;",
+          "description": "Show active network connections with remote endpoints."
+        },
+        {
+          "name": "logged_in_users",
+          "sql": "SELECT type, user, time, pid, sid FROM logged_in_users LIMIT 10;",
+          "description": "Lists currently logged in users"
+        },
+        {
+          "name": "file_integrity_events",
+          "sql": "SELECT * FROM file_events LIMIT 10;",
+          "description": "Monitor up to 10 file changes on watched paths (requires file_paths config; table constraints may apply)."
+        },
+        {
+          "name": "installed_apps",
+          "sql": "SELECT name FROM apps LIMIT 10;",
+          "description": "List up to 10 installed macOS application names (from the apps table; version/install_location omitted for brevity)."
+        },
+        {
+          "name": "kernel_modules",
+          "sql": "SELECT name, size, used_by, status, address FROM kernel_modules LIMIT 10;",
+          "description": "List all kernel modules"
+        },
+        {
+          "name": "usb_history",
+          "sql": "SELECT usb_address, usb_port, vendor, vendor_id, version, model, model_id, serial, class, subclass, protocol, removable FROM usb_devices LIMIT 10;",
+          "description": "Lists usb events"
+        }
+      ]
+    },
+    "linux": {
+      "scans": [
+        {
+          "name": "running_processes",
+          "sql": "SELECT pid, name, path, cmdline, uid, start_time FROM processes LIMIT 10;",
+          "description": "List all currently running processes."
+        },
+        {
+          "name": "open_network_connections",
+          "sql": "SELECT pid, local_address, local_port, remote_address, remote_port, state, protocol FROM process_open_sockets WHERE remote_address != '' LIMIT 10;",
+          "description": "Show active network connections with remote endpoints."
+        },
+        {
+          "name": "logged_in_users",
+          "sql": "SELECT type, user, time, pid, sid FROM logged_in_users LIMIT 10;",
+          "description": "Lists currently logged in users"
+        },
+        {
+          "name": "file_integrity_events",
+          "sql": "SELECT * FROM file_events LIMIT 10;",
+          "description": "Monitor up to 10 file changes on watched paths (requires file_paths config; table constraints may apply)."
+        },
+        {
+          "name": "kernel_modules",
+          "sql": "SELECT name, size, used_by, status, address FROM kernel_modules LIMIT 10;",
+          "description": "List all kernel modules"
+        },
+        {
+          "name": "usb_history",
+          "sql": "SELECT usb_address, usb_port, vendor, vendor_id, version, model, model_id, serial, class, subclass, protocol, removable FROM usb_devices LIMIT 10;",
+          "description": "Lists usb events"
+        }
+      ]
+    },
+    "windows": {
+      "scans": [
+        {
+          "name": "running_processes",
+          "sql": "SELECT pid, name, path, cmdline, uid, start_time FROM processes LIMIT 10;",
+          "description": "List all currently running processes."
+        },
+        {
+          "name": "open_network_connections",
+          "sql": "SELECT pid, local_address, local_port, remote_address, remote_port, state, protocol FROM process_open_sockets WHERE remote_address != '' LIMIT 10;",
+          "description": "Show active network connections with remote endpoints."
+        },
+        {
+          "name": "file_integrity_events",
+          "sql": "SELECT * FROM file_events LIMIT 10;",
+          "description": "Monitor up to 10 file changes on watched paths (requires file_paths config; table constraints may apply)."
+        },
+        {
+          "name": "installed_apps",
+          "sql": "SELECT name FROM apps LIMIT 10;",
+          "description": "List up to 10 installed Windows application names (from the apps table; version/install_location omitted for brevity)."
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///opt/homebrew/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Thu Jan 29 11:24:03 2026 as: nmap -p- -sV -Pn -oA scan_nintendo 192.168.0.15 -->
+<nmaprun scanner="nmap" args="nmap -p- -sV -Pn -oA scan_nintendo 192.168.0.15" start="1769685843" startstr="Thu Jan 29 11:24:03 2026" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.15" addrtype="ipv4"/>
+<address addr="D0:55:09:CC:33:0C" addrtype="mac" vendor="Nintendo"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskprogress task="SYN Stealth Scan" time="1769685991" percent="0.40"/>

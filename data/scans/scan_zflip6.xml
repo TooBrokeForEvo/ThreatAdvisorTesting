@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///opt/homebrew/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Thu Jan 29 10:27:13 2026 as: nmap -p- -sV -Pn -oA scan_zflip6 192.168.0.16 -->
+<nmaprun scanner="nmap" args="nmap -p- -sV -Pn -oA scan_zflip6 192.168.0.16" start="1769682433" startstr="Thu Jan 29 10:27:13 2026" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.16" addrtype="ipv4"/>
+<address addr="AC:DE:48:00:00:02" addrtype="mac"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1769682434" endtime="1769682579"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.16" addrtype="ipv4"/>
+<address addr="AC:DE:48:00:00:02" addrtype="mac"/>
+<hostnames>
+<hostname name="Flip6.lan" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="reset" count="65531" proto="tcp" ports="1-7399,7401-43506,43508-50192,50194-53600,53602-65535"/>
+</extraports>
+<port protocol="tcp" portid="7400"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rtps-discovery" servicefp="SF-Port7400-TCP:V=7.95%I=7%D=1/29%Time=697B3630%P=arm-apple-darwin24.2.0%r(GenericLines,2,&quot;\r\n&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="43507"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50193"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53601"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="8089" rttvar="963" to="100000"/>
+</host>
+<runstats><finished time="1769682579" timestr="Thu Jan 29 10:29:39 2026" summary="Nmap done at Thu Jan 29 10:29:39 2026; 1 IP address (1 host up) scanned in 145.78 seconds" elapsed="145.78" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

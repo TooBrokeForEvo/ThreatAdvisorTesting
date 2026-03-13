@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///opt/homebrew/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Thu Jan 29 10:26:32 2026 as: nmap -p- -sV -oA scan_firestick_3 192.168.0.12 -->
+<nmaprun scanner="nmap" args="nmap -p- -sV -oA scan_firestick_3 192.168.0.12" start="1769682392" startstr="Thu Jan 29 10:26:32 2026" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.12" addrtype="ipv4"/>
+<address addr="AC:DE:48:00:00:02 " addrtype="mac" vendor="Amazon Technologies"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1769682392" endtime="1769682585"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.12" addrtype="ipv4"/>
+<address addr="AC:DE:48:00:00:02 " addrtype="mac" vendor="Amazon Technologies"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65528">
+<extrareasons reason="reset" count="65528" proto="tcp" ports="1-5540,5542-8008,8010-40466,40468-55441,55444,55446-59999,60001-65535"/>
+</extraports>
+<port protocol="tcp" portid="5541"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="40467"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="unknown" servicefp="SF-Port40467-TCP:V=7.95%I=7%D=1/29%Time=697B35F7%P=arm-apple-darwin24.2.0%r(NULL,86,&quot;HTTP/1\.1\x20408\x20Request\x20Timeout\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(GenericLines,82,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(GetRequest,80,&quot;HTTP/1\.1\x20404\x20Not\x20found\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(HTTPOptions,82,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(RTSPRequest,82,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(RPCCheck,86,&quot;HTTP/1\.1\x20408\x20Request\x20Timeout\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(DNSVersionBindReqTCP,86,&quot;HTTP/1\.1\x20408\x20Request\x20Timeout\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(DNSStatusRequestTCP,86,&quot;HTTP/1\.1\x20408\x20Request\x20Timeout\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(Help,86,&quot;HTTP/1\.1\x20408\x20Request\x20Timeout\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(SSLSessionReq,86,&quot;HTTP/1\.1\x20408\x20Request\x20Timeout\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(TerminalServerCookie,86,&quot;HTTP/1\.1\x20408\x20Request\x20Timeout\r\nServer:\x20eSDK\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;none&apos;;\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="55442"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nagios-nsca" product="Nagios NSCA" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="55443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="unknown" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="55445"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="60000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<times srtt="6800" rttvar="797" to="100000"/>
+</host>
+<runstats><finished time="1769682585" timestr="Thu Jan 29 10:29:45 2026" summary="Nmap done at Thu Jan 29 10:29:45 2026; 1 IP address (1 host up) scanned in 193.10 seconds" elapsed="193.10" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
